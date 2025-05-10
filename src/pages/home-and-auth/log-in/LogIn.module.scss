@@ -1,0 +1,69 @@
+@import "../../../sass/base";
+
+.container {
+  @include container-standard;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 13rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: $font-color-secondary;
+  font-weight: 500;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: $font-size-form;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: $font-color-primary;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover {
+    color: darken($font-color-primary, 10%);
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -5px;
+}
+
+.button-submit {
+  @include button-standard;
+  width: 13.75rem;
+  align-self: center;
+  margin-bottom: -0.1rem;
+}

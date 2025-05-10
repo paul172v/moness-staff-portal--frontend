@@ -1,0 +1,42 @@
+@import "../../sass/base";
+
+.container {
+  @include container-standard;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  margin: 8rem 0 4rem 0;
+}
+
+.logo {
+  height: 13rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+.sub-title {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.title,
+.sub-title {
+  color: $font-color-secondary;
+  font-weight: 500;
+}
+
+.u-gap {
+  margin-top: 2rem;
+}
+
+.u-bookend {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid $font-color-secondary;
+  width: 100%;
+}

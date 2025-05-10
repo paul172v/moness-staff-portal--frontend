@@ -1,0 +1,18 @@
+@import "../../../sass/base";
+
+.container {
+  @include container-standard;
+  animation: fadeIn 1s ease-in-out, scrollInFromBottom 1s ease-in-out;
+}
+
+.logo {
+  height: 13rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: $font-color-secondary;
+  font-weight: 500;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}

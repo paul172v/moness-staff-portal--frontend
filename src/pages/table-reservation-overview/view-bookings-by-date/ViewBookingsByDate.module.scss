@@ -1,0 +1,84 @@
+@import "../../../sass/base";
+
+.container {
+  @include container-standard;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 10rem 0 4rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  color: $font-color-secondary;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.datePicker {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  @include button-standard;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.results {
+  width: 100%;
+  max-width: 800px;
+}
+
+.bookingCard {
+  background-color: $background-color-primary;
+  border: 1px solid $font-color-secondary;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.blockedSlotCard {
+  background-color: $background-color-secondary;
+  color: red;
+  border: 1px solid $font-color-secondary;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.editBtn {
+  @include button-standard;
+}
+
+.deleteBtn {
+  @include button-standard;
+}
+
+.cancelWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cancelButton {
+  @include button-standard;
+}

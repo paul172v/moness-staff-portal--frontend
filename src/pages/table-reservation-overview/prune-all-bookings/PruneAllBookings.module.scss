@@ -1,0 +1,39 @@
+@import "../../../sass/base";
+
+.container {
+  @include container-standard;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.title {
+  font-size: 2rem;
+  color: $font-color-secondary;
+  margin-bottom: 1rem;
+}
+
+.warning {
+  font-size: 1.1rem;
+  color: darkred;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.confirmButton {
+  @include button-standard;
+}
+
+.cancelButton {
+  @include button-standard;
+}

@@ -1,0 +1,77 @@
+@import "../../../sass/base";
+
+.container {
+  @include container-standard;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.logo {
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $font-color-secondary;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card {
+  background-color: lighten($background-color-primary, 3%);
+  border: 1px solid $font-color-primary;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+  align-items: center;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: $font-color-secondary;
+}
+
+.email {
+  font-size: 1.4rem;
+  color: $font-color-primary;
+}
+
+.role {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.allowed {
+  color: green;
+}
+
+.pending {
+  color: goldenrod;
+}
+
+.banned {
+  color: red;
+}
+
+.manager {
+  color: blue;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

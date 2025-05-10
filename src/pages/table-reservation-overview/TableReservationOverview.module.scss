@@ -1,0 +1,56 @@
+@import "../../sass/base";
+
+.container {
+  @include container-standard;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0 4rem 0;
+}
+
+.logo {
+  height: 13rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: $font-color-secondary;
+  font-weight: 500;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: $font-color-primary;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 14rem);
+  gap: 3rem 2rem;
+  margin: 1rem 0 4rem 0;
+
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 14rem);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $font-color-secondary;
+  border-radius: 4px;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
