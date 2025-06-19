@@ -1,0 +1,49 @@
+@import "../../../sass/base";
+
+.container {
+  @include container-standard;
+  max-width: 600px;
+  margin: auto;
+  animation: fadeIn 0.5s ease-in-out;
+  padding: 2rem;
+}
+
+h1 {
+  color: $font-color-secondary;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.detailsCard {
+  background-color: $background-color-primary;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid $font-color-secondary;
+  margin-bottom: 2rem;
+
+  p {
+    margin: 0.5rem 0;
+    color: $font-color-primary;
+  }
+
+  .label {
+    font-weight: bold;
+    color: $font-color-secondary;
+  }
+}
+
+.button {
+  @include button-standard;
+  margin-top: 2rem;
+}
+
+.cancelButton {
+  @include button-standard;
+  margin-top: 1rem;
+}

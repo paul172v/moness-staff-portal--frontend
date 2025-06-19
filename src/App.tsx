@@ -37,6 +37,9 @@ import EditBlockedTimeSlot from "./pages/table-reservation-overview/edit-blocked
 import DeleteBlockedTimeSlot from "./pages/table-reservation-overview/delete-blocked-time-slot/DeleteBlockedTimeSlot";
 import PruneAllBookings from "./pages/table-reservation-overview/prune-all-bookings/PruneAllBookings";
 import FlemmyngMenu from "./pages/flemmyng-menu/FlemmyngMenu";
+import CreateMenuItem from "./pages/flemmyng-menu/create-menu-item/CreateMenuItem";
+import EditMenuItem from "./pages/flemmyng-menu/edit-menu-item/EditMenuItem";
+import DeleteMenuItem from "./pages/flemmyng-menu/delete-menu-item/DeleteMenuItem";
 
 function App() {
   const showHeaderSettingsCtx = useContext(ShowHeaderSettingsContext);
@@ -137,6 +140,18 @@ function App() {
             element={<PruneAllBookings />}
           />
           <Route path="/flemmyng-menu-overview" element={<FlemmyngMenu />} />
+          <Route
+            path="/flemmyng-menu-overview/create/:category"
+            element={<CreateMenuItem />}
+          />
+          <Route
+            path="/flemmyng-menu-overview/edit/:category/:id"
+            element={<EditMenuItem />}
+          />
+          <Route
+            path="/flemmyng-menu-overview/delete/:category/:id"
+            element={<DeleteMenuItem />}
+          />
         </Routes>
       </div>
     </Router>
